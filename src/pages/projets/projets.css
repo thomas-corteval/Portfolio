@@ -1,0 +1,49 @@
+#projets{
+    padding-top: 50px;
+}
+
+a:hover{
+    color: var(--color-special);
+}
+
+#projets h1{
+    padding: 15%;
+    padding-top: 0px;
+    padding-bottom: 30px;
+}
+
+table {
+    width: 100%;
+    padding: 15%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-spacing: 20px 20px;
+    border-collapse: separate;
+    background-color: var(--color-secondary);
+}
+  
+tr th{
+    color: var(--color-special);
+}
+
+th{
+    text-align: left;
+}
+
+
+.filtre-container {
+    margin: 1rem auto;
+    text-align: left;
+    padding-left: 15%;
+}
+  
+select {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid var(--color-secondary);
+    background-color: var(--color-primary);
+}
+
+select option{
+    background-color: var(--color-primary);
+}

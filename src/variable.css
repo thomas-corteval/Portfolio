@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+
+:root {
+    --color-primary: #1f1731;
+    --color-secondary: #363c73;
+    --color-special: #d42640;
+  
+    /* Bonus : variantes utiles */
+    --color-primary-light: #2d234a;
+    --color-secondary-light: #4b538c;
+    --color-special-light: #e35064;
+  
+    --text-light: #d6bdb5;
+    --text-dark: #000000;
+    --background: #f9f9f9;
+
+    --font-main: 'Lexend', sans-serif;
+  }
+  
