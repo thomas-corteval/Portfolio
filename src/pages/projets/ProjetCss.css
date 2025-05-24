@@ -1,0 +1,71 @@
+#presentation{
+    padding: 0 15%;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+#presentation .carrousel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding-top: 0px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+}
+
+#presentation .carrousel #img{
+    height: 250px;
+    width: 444px;
+    border-radius: 5px;
+    box-shadow: 0 0 25px var(--color-secondary);
+    margin: 10px;
+}
+
+
+
+#contenu{
+    padding: 0 15%;
+    display: flex;
+    flex-direction: row;   
+
+    background-color: var(--color-secondary);
+}
+
+#contenu h2{
+    color: var(--color-special);
+}
+
+#partieA{
+    padding: 50px;
+
+    border-right: solid;
+    border-width: 2px;
+    border-color: var(--color-primary);
+}
+
+#partieB{
+    border-left: solid;
+    border-width: 2px;
+    border-color: var(--color-primary);
+
+    display: flex;
+    flex-direction: column;
+}
+
+#missions{    
+    padding: 50px;
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: var(--color-primary);
+}
+
+#competance{
+    padding: 50px;  
+    border-top: solid;
+    border-width: 2px;
+    border-color: var(--color-primary);
+}
+

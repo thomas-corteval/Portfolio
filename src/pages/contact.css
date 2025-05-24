@@ -1,0 +1,50 @@
+#contact{
+    padding-top: 50px
+}
+
+#contact h1, #contact p{
+    padding: 15%;
+    padding-top: 0px;
+    padding-bottom: 15px;
+
+}
+
+.contact-form{
+    padding: 15%;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    background-color: var(--color-secondary);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form label {
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
+    font-weight: bold;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 0.7rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: var(--color-primary);
+  }
+  
+  .contact-form button {
+    margin-top: 1.5rem;
+    padding: 0.8rem;
+    background-color: var(--color-special);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .contact-form button:hover {
+    background-color: var(--color-special-light);
+  }

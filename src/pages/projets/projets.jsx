@@ -3,6 +3,11 @@ import Header from '../../components/header';
 import '../../variable.css';
 import './projets.css';
 import { Link } from 'react-router-dom'; 
+import Pre from '../../assets/icon/precedent.png'
+import Sui from '../../assets/icon/suivant.png'
+import Sae0105 from '../../assets/img/sae0105.png'
+import Sae0104 from '../../assets/img/sae0104.png'
+import Sae0101 from '../../assets/img/sae0101.png'
 
 
 function Projets() {
@@ -15,21 +20,35 @@ function Projets() {
       nom: 'Refonte du site internet pour un conservatoire – Recueil et analyse des besoins du client',
       type: 'SAE',
       date: '2023',
-      link: '/sae-01-05'
+      link: '/sae-01-05',
+      image : Sae0105
     },
     {
       nom: 'Élaboration et création d’une base de données – Analyse des besoins du client',
       type: 'SAE',
       date: '2023',
-      link: '/sae-01-05'
+      link: '/sae-01-05',
+      image : Sae0104
     },
     {
       nom: 'Élaboration d’un exécutable de transformation d’image',
       type: 'SAE',
       date: '2023',
-      link: '/sae-01-05'
+      link: '/sae-01-05',
+      image : Sae0101
     }
   ];
+
+  const [indexActuel, setIndexActuel] = useState(0);
+
+  const suivant = () => {
+    setIndexActuel((indexActuel + 1) % projetsFiltres.length);
+  };
+  
+  const precedent = () => {
+    setIndexActuel((indexActuel - 1 + projetsFiltres.length) % projetsFiltres.length);
+  };
+
 
   const projetsFiltres = projets
     .filter(p => filtre === '' || p.type === filtre)
@@ -42,11 +61,23 @@ function Projets() {
 
   return (
     <>
-      <div id='header'>
-        <Header />
-      </div>
+      <Header />
       <div id='projets'>
         <h1>Mes Projets</h1>
+
+        {projetsFiltres.length > 0 && (
+          <div className='carrousel' >
+            <img src={Pre} onClick={precedent}/>
+            <Link to={projetsFiltres[indexActuel].link}>
+              <img id='img'
+                src={projetsFiltres[indexActuel].image}
+                alt={projetsFiltres[indexActuel].nom}
+              />
+            </Link>
+            <img src={Sui} onClick={suivant}/>
+          </div>
+        )}
+
         <div className="filtre-container">
           <label>Filtrer par type : </label>
           <select value={filtre} onChange={e => setFiltre(e.target.value)}>

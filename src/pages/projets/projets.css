@@ -12,7 +12,7 @@ a:hover{
     padding-bottom: 30px;
 }
 
-table {
+#projets table {
     width: 100%;
     padding: 15%;
     padding-top: 0px;
@@ -22,28 +22,68 @@ table {
     background-color: var(--color-secondary);
 }
   
-tr th{
+#projets tr th{
     color: var(--color-special);
 }
 
-th{
+#projets th{
     text-align: left;
 }
 
 
-.filtre-container {
+#projets .filtre-container {
     margin: 1rem auto;
     text-align: left;
     padding-left: 15%;
 }
   
-select {
+#projets select {
     padding: 0.5rem;
     border-radius: 5px;
     border: 1px solid var(--color-secondary);
     background-color: var(--color-primary);
 }
 
-select option{
+#projets select option{
     background-color: var(--color-primary);
+}
+
+#projets input{
+    background-color: var(--color-primary);
+    border-radius: 5px;
+    border: 1px solid var(--color-secondary);
+
+    color: var(--text-light);
+}
+
+#projets .carrousel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 15%;
+    padding-top: 0px;
+    padding-bottom: 30px;
+}
+
+#projets .carrousel a{
+    width: 64%;
+    height: 36%;
+}
+
+#projets img{
+    width: 50px;
+    height: 50px;
+
+    padding: 10px;
+}
+
+#projets #img{
+    width: 100%;
+    height: 100%;
+
+    padding: 0;
+
+    border-radius: 5px;
+    box-shadow: 0 0 25px var(--color-secondary);
 }

@@ -1,0 +1,35 @@
+#a-propos{
+    padding-top: 50px;
+}
+
+#a-propos h1{
+    padding: 15%;
+    padding-top: 0px;
+    padding-bottom: 15px;
+
+}
+
+#a-propos .section{
+    background-color: var(--color-secondary);
+
+    padding: 15%;
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+
+#cv-download{
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-primary) !important;
+}
+
+#a-propos button{
+    padding: 10px;
+    background-color: var(--color-secondary);
+    border: none;
+    border-radius: 5px;
+}
+
+#a-propos button:hover{
+    background-color: var(--color-secondary-light);
+}
