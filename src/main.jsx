@@ -11,7 +11,7 @@ import SAE0105 from './pages/projets/SAE-01-05';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/Portfolio">
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<App />} /> 
