@@ -57,7 +57,7 @@ function SAE0105() {
                 {imagesCarrousel.length > 0 && (
                   <div className="carrousel">
                     <img src={Pre} className='btn' onClick={imagePrecedente}/>
-                    <img src={imagesCarrousel[imageIndex].image} id='img'/>
+                    <img src={imagesCarrousel[0].image} id='img'/>
 
                     <img src={Sui} className='btn' onClick={imageSuivante}/>
                   </div>
